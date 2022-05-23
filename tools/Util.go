@@ -112,10 +112,9 @@ func (this MapString) EnsureInt64(key string, defaultValue int64) int64 {
 	return r
 }
 
-
-func StrIsEmpty(s string) bool{
+func StrIsEmpty(s string) bool {
 	s = strings.TrimSpace(s)
-	if(s == ""){
+	if s == "" {
 		return true
 	}
 	return false
@@ -197,6 +196,6 @@ func Slice_copy_string_2(src [][]string) [][]string {
 	return dst
 }
 
-func Int2Str( i int64) string{
+func Int2Str(i int64) string {
 	return fmt.Sprintf("%d", i)
 }
